@@ -14,5 +14,5 @@ A React application with Tailwind CSS that uses the Roboflow API to perform obje
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AbdelilahElgallati/Fuits-Segmentation
    cd fruit-segmentation-app
