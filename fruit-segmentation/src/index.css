@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-orange: #FF7D33; /* Brighter citrus orange */
+  --secondary-green: #4CAF50; /* Vibrant apple green */
+  --accent-purple: #9C27B0; /* Rich berry purple */
+  --accent-yellow: #FFC107; /* Banana yellow */
+  --background-light: #FFF8F0; /* Warmer peach background */
+  --card-bg: #FFFFFF; 
+  --text-dark: #2D3748;
+  --text-muted: #718096;
+  --border-light: #E2E8F0;
+}
+
+body {
+  @apply bg-[var(--background-light)] min-h-screen;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Enhanced component styles */
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+  }
+
+  .card {
+    @apply bg-[var(--card-bg)] rounded-2xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl border border-[var(--border-light)];
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-[var(--primary-orange)] to-[var(--accent-yellow)] text-white font-medium rounded-lg hover:opacity-90 focus:ring-2 focus:ring-[var(--primary-orange)] focus:ring-offset-2 transition-all duration-200 shadow-md;
+  }
+
+  .input-field {
+    @apply w-full p-3 rounded-lg border border-[var(--border-light)] focus:outline-none focus:ring-2 focus:ring-[var(--secondary-green)] focus:border-transparent shadow-sm transition-all duration-200;
+  }
+
+  .dropzone {
+    @apply border-2 border-dashed rounded-2xl p-8 text-center cursor-pointer transition-all duration-300 bg-[var(--card-bg)] hover:border-[var(--secondary-green)] hover:bg-[var(--background-light)] flex flex-col items-center justify-center min-h-[200px];
+  }
+
+  .dropzone-active {
+    @apply border-[var(--secondary-green)] bg-green-50;
+  }
+
+  .canvas-container {
+    @apply relative rounded-2xl overflow-hidden shadow-lg bg-[var(--card-bg)] border border-[var(--border-light)];
+  }
+
+  .stats-card {
+    @apply card bg-gradient-to-br from-[var(--secondary-green)/10] to-[var(--accent-purple)/10] backdrop-blur-sm;
+  }
+
+  .loading-spinner {
+    @apply animate-spin rounded-full h-12 w-12 border-t-4 border-[var(--primary-orange)] border-r-4 border-r-[var(--accent-yellow)];
+  }
+
+  .fruit-badge {
+    @apply bg-gradient-to-r from-[var(--primary-orange)] to-[var(--accent-yellow)] text-white px-3 py-1 rounded-full text-sm font-semibold shadow-sm;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
