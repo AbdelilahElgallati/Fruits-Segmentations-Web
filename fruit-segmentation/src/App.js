@@ -135,18 +135,33 @@ const App = () => {
     try {
       const imageInput = { type: imageData.startsWith('data:') ? 'base64' : 'url', value: imageData };
 
-      const response = await fetch('https://detect.roboflow.com/infer/workflows/wisd-team/custom-workflow-2', {
+      const response = await fetch('https://serverless.roboflow.com/infer/workflows/wisd-team/fruits-segmentation-v2', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          api_key: 'QWWUQhqLvvpzOoFe7CP7',
-          inputs: {
-            image: imageInput
-          }
+            api_key: 'QWWUQhqLvvpzOoFe7CP7',
+            inputs: {
+              image: imageInput
+            }
         })
-      });
+    });
+
+    
+
+      // const response = await fetch('https://detect.roboflow.com/infer/workflows/wisd-team/custom-workflow-2', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify({
+      //     api_key: 'QWWUQhqLvvpzOoFe7CP7',
+      //     inputs: {
+      //       image: imageInput
+      //     }
+      //   })
+      // });
 
       const result = await response.json();
       const fruitPredictions = result.outputs?.[0]?.predictions?.predictions || [];
