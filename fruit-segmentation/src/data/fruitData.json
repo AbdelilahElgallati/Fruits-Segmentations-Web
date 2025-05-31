@@ -1,0 +1,106 @@
+{
+  "apple": {
+    "nutrition": {
+      "calories": "52 kcal",
+      "carbs": "14g",
+      "fiber": "2.4g",
+      "sugars": "10g",
+      "vitamin_c": "8% DV"
+    },
+    "fun_facts": [
+      "Apples float in water because they are 25% air.",
+      "There are over 7,500 known varieties of apples grown worldwide.",
+      "It takes the energy from 50 apple leaves to produce one apple."
+    ],
+    "icon": "🍎"
+  },
+  "orange": {
+    "nutrition": {
+      "calories": "47 kcal",
+      "carbs": "12g",
+      "fiber": "2.4g",
+      "sugars": "9g",
+      "vitamin_c": "88% DV"
+    },
+    "fun_facts": [
+      "Oranges are a hybrid, possibly between pomelo and mandarin.",
+      "The color orange was named after the fruit, not the other way around.",
+      "Brazil is the world's largest producer of oranges."
+    ],
+    "icon": "🍊"
+  },
+  "banana": {
+    "nutrition": {
+      "calories": "89 kcal",
+      "carbs": "23g",
+      "fiber": "2.6g",
+      "sugars": "12g",
+      "potassium": "10% DV"
+    },
+    "fun_facts": [
+      "Bananas are technically berries.",
+      "Banana plants are the largest herbaceous flowering plants.",
+      "Humans share about 50% of their DNA with bananas."
+    ],
+    "icon": "🍌"
+  },
+  "grape": {
+    "nutrition": {
+      "calories": "69 kcal",
+      "carbs": "18g",
+      "fiber": "0.9g",
+      "sugars": "15g",
+      "vitamin_k": "18% DV"
+    },
+    "fun_facts": [
+      "Grapes have been cultivated for over 8,000 years.",
+      "It takes about 2.5 pounds of grapes to make one bottle of wine.",
+      "There are over 8,000 varieties of grapes worldwide."
+    ],
+    "icon": "🍇"
+  },
+  "strawberry": {
+    "nutrition": {
+      "calories": "32 kcal",
+      "carbs": "8g",
+      "fiber": "2g",
+      "sugars": "5g",
+      "vitamin_c": "98% DV"
+    },
+    "fun_facts": [
+      "Strawberries are the only fruit with seeds on the outside.",
+      "On average, a strawberry has 200 seeds.",
+      "Strawberries belong to the rose family."
+    ],
+    "icon": "🍓"
+  },
+  "watermelon": {
+    "nutrition": {
+      "calories": "30 kcal",
+      "carbs": "8g",
+      "fiber": "0.4g",
+      "sugars": "6g",
+      "water_content": "92%"
+    },
+    "fun_facts": [
+      "Watermelons are considered both a fruit and a vegetable.",
+      "The world's heaviest watermelon weighed over 350 pounds (159 kg).",
+      "Early explorers used watermelons as canteens."
+    ],
+    "icon": "🍉"
+  },
+  "default": {
+    "nutrition": {
+      "calories": "N/A",
+      "carbs": "N/A",
+      "fiber": "N/A",
+      "sugars": "N/A",
+      "vitamin_c": "N/A"
+    },
+    "fun_facts": [
+      "This fruit seems interesting! Unfortunately, we don't have specific facts for it yet.",
+      "Did you know fruits are nature's candy?"
+    ],
+    "icon": "🍏"
+  }
+}
