@@ -2,8 +2,6 @@
 
 Une application web moderne qui utilise l'intelligence artificielle pour détecter, segmenter et analyser les fruits dans les images. Fruit Vision AI offre une interface utilisateur intuitive et des fonctionnalités avancées pour l'analyse de fruits.
 
-![Fruit Vision AI Screenshot](screenshot.png)
-
 ## ✨ Fonctionnalités
 
 - **Détection et Segmentation** : Identification précise des fruits dans les images
