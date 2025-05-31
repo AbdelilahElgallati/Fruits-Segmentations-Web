@@ -23,7 +23,7 @@ Une application web moderne qui utilise l'intelligence artificielle pour détect
 
 1. Clonez le repository :
 ```bash
-git clone [https://github.com/AbdelilahElgallati/Fuits-Segmentation](https://github.com/AbdelilahElgallati/Fruits-Segmentations-Web)
+git clone https://github.com/AbdelilahElgallati/Fruits-Segmentations-Web
 cd fruit-segmentation
 ```
 
